@@ -1,0 +1,394 @@
+#      Python Programming Questions – LIST
+
+#ques. Write a Python program to create a list of integers and print its elements.
+
+##a=[10,34,542,3]
+##print(a)
+
+#ques. Write a program to find the sum and average of all elements in a list.
+
+##a=[45,32,40,56,32,78]
+##print(sum(a))
+##print(sum(a)/len(a))
+
+#ques.Write a program to find the largest and smallest element in a list. 
+
+##a=[45,32,40,56,32,78]
+##print(max(a))
+##print(min(a))
+
+#ques. Write a Python program to count the number of elements in a list without using len()
+
+##a=[45,32,40,56,32,78]
+##count=0
+##for num in a:
+##    count+=1
+##print(count)
+
+#ques. Write a program to reverse a list without using built-in functions.
+
+##a=[45,32,40,56,32,78]
+##reverse=[]
+##i=len(a)-1
+##while i>=0:
+##    reverse.append(a[i])
+##    i=i-1
+##print("reverse list-",reverse)
+    
+
+
+
+#ques.Write a Python program to remove duplicate elements from a list.
+
+##a=[45,32,40,56,45,32,78]
+##unique=list(set(a))
+##print(unique)
+
+#ques.Write a program to check if an element exists in a list.
+
+##a=[45,32,40,56,45,32,78]
+##x=int(input("enter the number:"))
+##found=False
+##for i in a
+##:
+##    if i==x:
+##        found=True
+##        break
+##if found:
+##    print("element existed in it")
+##else:
+##    print("element not exist")
+    
+
+#               Intermediate Level
+
+#ques. Write a program to merge two lists and remove duplicates.
+
+##a=[10,20,30,40,50]
+##b=[40,50,60,70,80]
+##c=list(set(a)| (set(b)))
+##print(c)
+
+#ques. Write a program to find common elements between two lists.
+
+##a=[10,20,30,40,50]
+##b=[40,50,60,70,80]
+##c=list(set(a)&set(b))
+##print(c)
+#ques. Write a program to split a list into even and odd numbers.
+
+##a=[10,20,3,5,67,45,60]
+##even=[]
+##odd=[]
+##
+##for num in a:
+##    if num%2==0:
+##        even.append(num)
+##    else:
+##        odd.append(num)
+##
+##print("even numbers",even)
+##print("odd numbers",odd)
+
+#ques.Write a Python program to find the second largest number in a list.
+
+##a=[10,20,3,5,50,60]
+##a.sort(reverse=True)
+##print(a[1])
+
+#ques. Write a program to flatten a nested list. 
+
+##li = [1, [2, [3, 4]], 5]
+##flatten_li=[]
+##for x in li:
+##    if type(x)==list:
+##        for i in x:
+##            if type(i)==list:
+##                for j in i:
+##                    flatten_li.append(j)
+##                else:
+##                    flatten_li.append(i)
+##    else:
+##        flatten_li.append(x)
+##print("flatten list-",flatten_li)
+
+
+#ques. Write a program to count frequency of each element in a list.
+
+##a = [1, 2, 2, 3, 1, 4, 2]
+##freq={}
+##for num in a:
+##    if num in freq:
+##        freq[num]+=1
+##    else:
+##        freq[num]=1
+##print(freq)
+
+#ques. Write a program to replace all negative numbers with zero in a list.
+
+##a=[1,3,45,32,4,0,-1,-55]
+##A=[]
+##for num in a:
+##    if num<=0:
+##        A.append(0)
+##    else:
+##        A.append(num)
+##print(A)
+
+
+#            Advanced Level
+
+#ques. Write a program to remove all occurrences of a given element from a list.
+
+##a=[10,20,30,10,40,55,10]
+##element=10
+##while element in a:
+##    a.remove(element)
+##print(a)
+
+#ques. Write a program to check if a list is a palindrome.
+
+##a=[10,20,10]
+##
+##original=a
+##reverse=a[::-1]
+##if original==reverse:
+##    print("list is palindrome")
+##else:
+##    print("list is not palindrome")
+
+#ques. Write a program to perform element-wise addition of two lists.
+
+##a=[10,40,5,43,21,76]
+##b=[42,89,24,79,54,44]
+##add=[]
+##for i in range (len(a)):
+##    add.append(a[i]+b[i])
+##print(add)
+
+
+# Write a Python program to find missing numbers in a given list of consecutive integers.
+
+##li=[2,4,6,10,14,16]
+##diff=li[1]-li[0]
+##print(li)
+##for i in range(0,len(li)-1):
+##    if li[i]+diff!=li[i+1]:
+##        print(f"{i+2} place missing value:",li[i]+diff)
+    
+#ques.  Write a Python program to find the longest increasing subsequence in a list.
+
+##li = [10, 9, 2, 5, 3, 7, 101, 18]
+##longest_sub_seq=[]
+##temp=[]
+##for i in range(0,len(li)-1):
+##    if li[i]>li[i+1]:
+##        temp.append(li[i])
+##    else:
+##        temp.append(li[i])
+##        if len(temp)>len(longest_sub_seq):
+##            longest_sub_seq=temp
+##        temp=[]
+##print(longest_sub_seq)
+                         
+        
+#ques. Write a program to group elements based on frequency.
+
+##a=[10,40,50,60,340,50,60,340]
+##freq={}
+##for num in a:
+##     if num in freq:
+##         freq[num]+=1
+##     else:
+##         freq[num]=1
+##
+##group={}
+##for key,value in freq.items():
+##    if value in group:
+##        group[value].append(key)
+##    else:
+##        group[value]=[key]
+##
+##print(group)
+
+
+                       # tuple
+
+#                   basic level
+
+#ques. Write a Python program to create a tuple and print its elements.
+
+##a=(4,54,3,4,6,78)
+##print(a)
+
+#ques. Write a program to find the length ,max, min ,count occurence, existence of a tuple.
+
+##a=(4,54,3,4,6,78)
+##print(len(a))
+##print(max(a))
+##print(min(a))
+##element=4
+##print(a.count(element))
+##print(54 in a)
+
+#ques. Write a program to convert a tuple into a list.
+
+##a=(4,54,3,4,6,78)
+##b=list(a)
+##print(b)
+
+#                Intermediate Level
+
+#ques. Write a program to slice a tuple and display the result.
+
+##a=(4,54,3,4,6,78)
+##print(a[1:3])
+
+#ques.  Write a program to find repeated elements in a tuple.
+
+##a=(4,54,3,3,4,6,78)
+##repeated=[x for x in set(a) if a.count(x)>1]
+##print(repeated)
+
+#ques.  Write a program to merge two tuples.
+
+##a=(1,4,54,3)
+##b=(10,40,60,30)
+##c=set(a)|set(b)
+##print(c)
+
+#ques. Write a program to unpack elements of a tuple into variables.
+
+##a=(10,20,30)
+##x,y,z=a
+##print(x)
+##print(y)
+##print(z)
+
+#ques. Write a Python program to sort a tuple
+
+##a=(10,40,43,23,56)
+##b=list(a)
+##b.sort()
+##print(b)
+
+#ques. Write a program to convert a list of tuples into a dictionary.
+
+##a=[("harsh",18),("shivam",20)]
+##d=dict(a)
+##print(d)
+             #Advanced Level
+
+#ques.  Write a program to find the index of an element in a tuple.
+
+##a=(10,40,43,23,56)
+##user_input=int(input("Enter the number to find index:"))
+##if user_input in a:
+##    print("index is:",a.index(user_input))
+##else:
+##    print("number not found")
+
+#ques. Write a program to remove an element from a tuple (without directly modifying it).
+##
+##a=(10,40,43,23,56)
+##print(a)
+##b=list(a)
+##num=int(input("enter the element you want to remove:"))
+##if num in a:
+##    b.remove(num)
+##    a=tuple(b)
+##    print("updated table:",a)
+##else:
+##    print("number is not found")
+
+#ques.Write a program to find common elements between two tuples.
+
+##a=(10,20,30,40,50)
+##b=(40,50,60,70,80)
+##c=tuple(set(a)& set(b))
+##print(c)
+
+#ques.  Write a Python program to check if a tuple is a palindrome.
+
+##a=(10,20,10,10)
+##
+##if a==a[::-1]:
+##    print("palindrome")
+##else:
+##    print("not palindrome")
+
+
+#ques.. Write a program to create a nested tuple and access its elements.
+
+##a=(10,20,(40,34,31),45,(46,56))
+##print(a[2][1])
+
+#ques.  Write a program to find the element with maximum frequency in a tuple.
+
+##
+##a=(10,20,30,20,10,10)
+##max_count=0
+##max_element=None
+##for x in a:
+##    count=a.count(x)
+##    if count>max_count:
+##        max_count=count
+##        max_element=x
+##
+##print("max element:",max_element)
+##print("max_count:",max_count)
+    
+       
+   
+
+
+
+
+
+
+    
+        
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
