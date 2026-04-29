@@ -126,15 +126,6 @@ def viewbookings():
         
     
     
-
-
-
-
-
-
-
-
-
 print("\n\t\t ***HOTEL BOOKING CONSOLE***")
 print("\n\t\t        ADD guest-1")
 print("\t\t        VIEW guest-2")
@@ -145,6 +136,15 @@ print("\t\t        VIEW bookings-6")
 print("\t\t        EXIT-0")
 
 while True:
+        
+    print("\n\t\t ***HOTEL BOOKING CONSOLE***")
+    print("\n\t\t        ADD guest-1")
+    print("\t\t        VIEW guest-2")
+    print("\t\t        ADD  ROOM-3")
+    print("\t\t        VIEW rooms-4")
+    print("\t\t        BOOK room-5")
+    print("\t\t        VIEW bookings-6")
+    print("\t\t        EXIT-0")
     choice=int(input("\n\t\tenter the number as per requirement:"))
     if choice==0:
         print("\n\t\t\t   -----bye bye----- ")
